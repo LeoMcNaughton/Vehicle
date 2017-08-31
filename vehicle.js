@@ -5,25 +5,38 @@ let Vehicle = function(e,f,gt,aMPG,mD){
   let averageMPG = aMPG;
   let milesDriven = mD;
 
-  function totalMiles();{
+  function totalMiles(){
     return milesDriven;
   }
-  function fuelLeft();{
+  function fuelLeft(){
     return fuel;
   }
-  function fill();{
-    fuel = percent;
+  function fill(){
+    let gastank = 0;
+    fuel += p;
 
-  }
-  function drive();{
-    milesDriven += (hours*averageMPG);
-    fuel -= (milesDriven*hours);
-    if fuel (f == 0){
-      console.log("No More Gas!")
-      return f == 0;
+    if(f => 1){
+      fuel = 1;
+    }
     }
   }
-  function engineEfficiency();{
+  function drive(){
+    let burnedgas = h*engineEfficiency()
+    fuel -= burnedgas;
+    
+    if(fuel == 0){
+      milesDriven += h*avg;
+    }
+    else if(fuel > 0){
+      milesDriven += h*avg;
+    }
+    else if(fuel <= 0){
+      milesDriven += avg*fuel;
+      fuel =0;
+    }
+    }
+  }
+  function engineEfficiency(){
     if (e == 4){
       return 1;
     }
